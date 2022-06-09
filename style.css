@@ -1,6 +1,6 @@
 * {
-    padding: 0;
-    margin: 0;
+    padding: 6px;
+    margin: 3px;
     box-sizing: border-box;
     text-decoration: none;
     font-family: sans-serif;
@@ -10,39 +10,43 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(247, 243, 243);
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .instagram-wrapper {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     width: 60%;
-    height: 100vh;
+    height: 90vh;
 }
 
 .instagram-phone {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     width: 50%;
+    margin-top: 10px;
 }
 
 .instagram-phone img {
-    height: 50rem;
+    height: 55rem;
 }
 
 .instagram-continue {
     display: flex;
-    align-items: center; /* horizontal */
-    justify-content: space-around; /* vertical */
+    align-items: center;
     flex-direction: column;
     width: 50%;
     min-height: 34rem;
+    padding: 20px 30px;
+    margin-top: 30px;
 }
 
 .group {
@@ -51,8 +55,8 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: #ffffff;
-    width: 100%;
-    padding: 1.3rem 0;
+    width: 107%;
+    
     border: 1px solid lightgray;
 }
 
@@ -61,19 +65,8 @@ body {
 }
 
 .instagram-logo {
-    height: 3rem;
-}
-
-.profile-photo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.profile-photo img {
-    height: 6rem;
+    height: 4.4rem;
+    margin-top: 35px;
 }
 
 .instagram-login {
@@ -81,15 +74,8 @@ body {
     color: #ffffff;
     padding: 8px;
     border-radius: 4px;
-}
-
-.instagram-logout {
-    color: #0095f6;
-    margin-top: 1rem;
-}
-
-.not-account {
-    color: rgb(160, 160, 160);
+    text-align: center;
+    width: 274px;
 }
 
 .link-blue {
@@ -102,15 +88,13 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 1.3rem 0;
 }
 
 .download {
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    padding: 1rem;
 }
 
 .app-download {
@@ -127,8 +111,100 @@ body {
     background-image: url('./img/googleplay-button.png');
 }
 
-/* media queries */
+.facebook {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.facebook a {
+    color: #3f4e9b;
+}
+
+.t1 {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.t1 img {
+    max-width: 12%;
+    margin-right: -9px;
+}
+
+.t2 {
+    font-size: 11.5px;
+}
+
+.ou {
+    display: flex;
+    color: rgb(160, 160, 160);
+    font-weight: 550;
+}
+
+.ou::after, .ou::before {
+    content: " ";
+    background-color: gainsboro;
+    width: 111px;
+    height: 1px;
+    margin: 6px 16px;
+}
+
+.input, .input .text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.txt-box-item {
+    width: 276px;
+    height: 38px;
+    border-radius: 4px;
+    border: 1px solid lightgray;
+    background-color: rgb(247, 243, 243);
+}
+
+.not-account {
+    padding: 15px; 
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 55px;
+}
+
+footer .footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+}
+
+footer a {
+    color: rgb(160, 160, 160);
+    font-size: smaller;
+}
+
+footer p {
+    color: rgb(160, 160, 160);
+    font-size: smaller;
+}
+
+.select2022 {
+    display: flex;
+    flex-direction: row;
+}
+
+.select {
+    color: rgb(160, 160, 160);
+    background-color: rgb(247, 243, 243);
+    font-size: smaller;
+    border: none;
+}
+
+/* media queries */
 
 @media (max-width: 1024px) {
     .instagram-wrapper {

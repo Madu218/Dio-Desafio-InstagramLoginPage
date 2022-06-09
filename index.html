@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Instagram</title>
+    <link rel="icon" type="imagem/png" href="./img/ig.png" />
 </head>
 <body>
     <div class="instagram-wrapper">
@@ -14,22 +15,27 @@
         <div class="instagram-continue">
             <div class="group">
                 <img src="./img/instagram-logo.png" class="instagram-logo" alt="instagram logo">
-                <div class="profile-photo">
-                    <img src="./img/perfil-instagram.jpg" alt="foto de perfil">
+                <div class="input">
+                    <div class="text-box">
+                        <input type="text" name="nome" placeholder="Telefone, nome de usuário ou email" class="txt-box-item">
+                        <input type="password" name="senha" placeholder="Senha" class="txt-box-item">
+                    </div>
+                    <a href="#" class="instagram-login">Entrar</a>
                 </div>
-                <a href="#" class="instagram-login">Continue como sprucegabriela</a>
-                <a href="#" class="instagram-logout">Remover conta</a>
+                <p class="ou">OU</p>
+                <div class="facebook">
+                    <a href="" class="t1"><img src="./img/fb.png" alt="logo do facebook"><p>Entrar com o Facebook</p></a>
+                    <a href="" class="t2">Esqueceu a senha?</a>
+                </div>
             </div>
             <div class="group">
-                <p class="not-account">Não é sprucegabriela?</p>
                 <p class="not-account">
-                    <span class="link-blue">Alternar contas</span>
-                    ou
-                    <span class="link-blue">Inscreva-se</span>
+                    Não tem uma conta?
+                    <a href="" class="link-blue">Cadastre-se</a>
                 </p>
             </div>
             <div class="get-the-app">
-                <p class="get-app">Baixe o aplicativo</p>
+                <p class="get-app">Obtenha o aplicativo.</p>
                 <div class="download">
                     <a href="#" class="app-download"></a>
                     <a href="#" class="app-download"></a>
@@ -37,5 +43,25 @@
             </div>
         </div>
     </div>
+    <footer>
+        <div class="footer">
+            <a href="">Meta</a><a href="">Sobre</a><a href="">Blog</a><a href="">Carreiras</a><a href="">Ajuda</a><a href="">API</a><a href="">Privacidade</a><a href="">Termos</a><a href="">Principais Contas</a><a href="">Hashtags</a><a href="">Localizações</a><a href="">Instagram Lite</a><a href="">Carregamento de contatos e não usuários</a><a href="">Dança</a><a href="">Comida e bebida</a><a href="">Casa e jardim</a><a href="">Música</a><a href="">Artes visuais</a>
+        </div>
+        <div class="select2022 footer">
+            <select name="select" class="select">
+                <option value="valor1">Afrikaans</option>
+                <option value="valor1">English</option>
+                <option value="valor1">English (UK)</option>
+                <option value="valor1">Español (España)</option>
+                <option value="valor1">Español</option>
+                <option value="valor1">Français</option>
+                <option value="valor1">Nederlands</option>
+                <option value="valor1">Polski</option>
+                <option value="valor2" selected>Português (Brasil)</option>
+                <option value="valor3">Português (Portugal)</option>
+            </select>
+            <p>© 2022 Instagram from Madu</p>
+        </div>   
+    </footer>
 </body>
 </html>
